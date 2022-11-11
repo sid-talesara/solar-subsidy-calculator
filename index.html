@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Subsidiry Calculator</title>
+    <script src="https://kit.fontawesome.com/210b58f0cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="navbar">
+                <div class="image-div lla">
+                    <a href="https://labourlawadvisor.in/" target="_blank">
+                        <img src="https://labourlawadvisor.in/wp-content/uploads/2022/04/cropped-lla-logo_998b3c4e-1536x616.png"
+                            alt="" class="logo lla-logo ">
+                    </a>
+                </div>
+                <div class="heading-div">
+                    <h1 class="navbar-heading">Solar Subsidy Calculator</h1>
+                </div>
+
+                <div class="image-div solar-logo">
+                    <a href="https://solarsquare.info/3ageLNp" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/fotlogo.png" alt="" class="logo">
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="calculator">
+
+                <div class="calculator__row">
+                    <div class="calc-control">
+                        <span class="rooftop-heading">Rooftop Solar System Capacity:</span> <br> <span
+                            class="solar-value" id="solar-capacity-value">⚡ 5 kW⚡</span>
+                        <div class="field">
+                            <div class="value left">0</div>
+                            <input type="range" min="0" value="5" max="11" value="0" step="0.5" class="slider"
+                                id="solar-capacity-slider" list="tickmarks" required />
+                            <div class="value right">10+</div>
+                        </div>
+                        <datalist id="tickmarks">
+                            <option value="0" label="0"></option>
+                            <option value="1" label="1"></option>
+                            <option value="2" label="2"></option>
+                            <option value="3" label="3"></option>
+                            <option value="4" label="4"></option>
+                            <option value="5" label="5"></option>
+                            <option value="6" label="6"></option>
+                            <option value="7" label="7"></option>
+                            <option value="8" label="8"></option>
+                            <option value="9" label="9"></option>
+                            <option value="10" label="10"></option>
+                            <option value="11" label="10+"></option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="calculator__row">
+                    <h3 class="calculator__info">Applicable Subsidy: <br><span class="overall-result">₹<span
+                                class="final-subsidy-amount" id="overall-result">58352</span>
+                            Saved!💸💸</span></h3>
+                </div>
+                <div class="btn-group">
+                    <a href="https://wa.me/+917208979637" target="_blank" rel="noopener noreferrer" class="link">
+                        <button class="btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat
+                            with
+                            Us </button>
+                    </a>
+                    <a href="https://solarsquare.info/3ageLNp" target="_blank" rel="noopener noreferrer" class="link">
+                        <button class="btn-get-a-quote">Get a Quote <i class="fa-regular fa-paper-plane"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2 class="solar-title-calc center">Solar Subsidy Calculation</h2>
+        <br><br>
+        <h3>Central Financial Assistance (CFA)/ Central Government Subsidy for rooftop solar
+            plant installed by a residential consumer under simplified procedure</h3>
+        <br><br>
+        <p class="center">
+
+        <table class="center">
+            <thead style="user-select: auto;">
+                <tr style="user-select: auto;">
+                    <th>Plant Capacity&nbsp;<br style="user-select: auto;"></th>
+                    <th>Applicable Subsidy</th>
+                </tr>
+            </thead>
+            <tbody style="user-select: auto;">
+                <tr style="user-select: auto;">
+                    <td>&nbsp;Up to 3 kW</td>
+                    <td>Rs. 14588/- per kW&nbsp;</td>
+                </tr>
+                <tr style="user-select: auto;">
+                    <td>Above 3 kW and up to 10 kW&nbsp;</td>
+                    <td>Rs. 14588/- per kW for first 3 kW and
+                        thereafter Rs. 7294/- per kW&nbsp;</td>
+                </tr>
+                <tr style="user-select: auto;">
+                    <td>Above 10 kW&nbsp;</td>
+                    <td>Rs. 94822/- fixed&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        </p>
+        <br>
+
+        <br>
+        <p><b>Note:</b> The CFA/subsidy will be available only for applications registered till 31.12.2022 in the
+            National Portal and will be released after clearance by inspecting authority (DISCOM) on
+            successful commissioning and installation of metering system as per specified procedure. The
+            CFA/subsidy will not be applicable with retrospective effect.</p>
+        <br>
+        <p><b>Calculation of CFA/subsidy: </b>The CFA/subsidy would be calculated on the basis of total solar
+            module capacity/solar inverter capacity/capacity approved by DISCOM, whichever is lower.
+        </p>
+        <br>
+        <p><b><u>Illustration for calculation of central Government subsidy
+                </u></b></p>
+        <br>
+        <p class="center">
+
+
+
+        <table>
+            <thead style="user-select: auto;">
+                <tr style="user-select: auto;">
+                    <th>Rooftop Solar System Capacity
+                        (lowest of total solar module capacity
+                        or solar inverter capacity/ capacity
+                        approved by DISCOM)
+                        &nbsp;<br style="user-select: auto;"></th>
+                    <th>Applicable Subsidy
+                    </th>
+                </tr>
+            </thead>
+            <tbody style="user-select: auto;">
+                <tr style="user-select: auto;">
+                    <td>2.5 kW
+                    </td>
+                    <td>Rs. 14588/- X 2.5
+                        = Rs. 36,470/-
+                    </td>
+                </tr>
+                <tr style="user-select: auto;">
+                    <td>3 kW</td>
+                    <td>Rs. 14588/- X 3
+                        = Rs. 43,764/-
+                    </td>
+                </tr>
+                <tr style="user-select: auto;">
+                    <td>4 kW</td>
+                    <td>Rs. 14588/- X 3 + Rs. 7294/- X 1
+                        = Rs. 51,058/-</td>
+                </tr>
+                <tr style="user-select: auto;">
+                    <td>&nbsp;6.5 kW</td>
+                    <td>Rs. 14588/- X 3 + Rs. 7294/- X 3.5
+                        = Rs. 69,293/-
+                        &nbsp;</td>
+                </tr>
+                <tr style="user-select: auto;">
+                    <td>10 kW&nbsp;</td>
+                    <td>Rs. 94822/-&nbsp;</td>
+                </tr>
+                <tr style="user-select: auto;">
+                    <td>&nbsp;15 kW</td>
+                    <td><span style="font-style: normal; font-weight: 400; user-select: auto;">Rs.
+                            94822/-&nbsp;</span>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        </p><br><br>
+        <p> Source: Ministry of New and Renewable Energy
+            Rooftop Solar Division
+        </p>
+        <br><br>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

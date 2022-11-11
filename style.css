@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  height: 100vh;
+  width: 100%; 
+  font-family: 'Montserrat', sans-serif;
+
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+  .wrapper{
+   width: 1100px;
+   height: 70%;
+   margin: auto;
+   margin-top: 10%;
+   overflow: hidden;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #cacaca,
+                 -5px -5px 10px #f6f6f6;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content:space-evenly;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+  }
+  .image-div{
+      width: 20%;
+    }
+    .heading-div{
+    width: 60%;
+  }
+  .logo{
+      height: 65px;
+    }
+    .lla-logo{
+      height: 50px;
+    }
+    
+  .calculator{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+width: auto;
+height: 75%;
+text-align: center;
+margin: 10px;
+  }
+
+  
+
+/*   
+  .calculator__row {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 30%;
+  margin: 0 0 30px;
+}
+
+.calculator__row:last-child {
+  margin-bottom: 0;
+}
+ */
+
+.calculator__row{
+  display: flex;
+  width: 100%;
+  height: 35%;
+  margin: auto;
+}
+.calc-control{
+    width: 100%;
+    margin: auto;
+}
+.calculator__info{
+    margin: auto;
+}
+.field{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 0;
+}
+.value{
+    padding:0 10px;
+}
+.slider {
+height: 4px;
+    width:100%;
+outline: none;
+border: none;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background: black;
+    width: 90%;
+  
+    outline: none;
+    }
+
+    input[type="range"]:focus,
+    input[type="range"]:active{
+    border: 0;
+    outline: none;
+    }
+    
+    input[type="range"]::-webkit-slider-thumb {
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    background-image: url("https://images.emojiterra.com/google/noto-emoji/v2.034/512px/26a1.png");
+    background-position: 0 0;
+    background-size: cover;
+    
+    cursor: pointer;
+    margin-top: -15px;
+    -webkit-appearance: none;
+    }
+    input[type="range"]::-webkit-slider-thumb:active {
+    background-position: 100% 0px;
+    transform: scale(2) rotateZ(var(--thumb-rotate, 10deg));
+    }
+    
+    datalist {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        writing-mode: vertical-lr;
+        width: 71.5%;
+        margin: auto;
+        padding: 10px;
+        padding-top: 0;
+      }
+      
+      option {
+        padding: 0;
+      }
+
+.overall-result{
+  color: rgb(106, 177, 0);
+  font-size:xx-large;
+}
+
+.rooftop-heading{
+    font-size: 18px;
+    font-weight: 600;
+    
+    
+}
+.solar-value{
+    font-size: 22px;
+    display: block;
+    padding: 20px;
+    font-weight: 600;
+    color: orange;
+  
+   
+}
+.btn-group{
+  margin:20px;
+  
+}
+.btn-get-a-quote{
+    width:30%;
+    font-size: 18px;
+    background-color: #2b2a2a;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+    margin:auto;
+    text-decoration: none;
+}
+.btn-whatsapp{
+  display: inline;
+  width:20%;
+  font-size: 18px;
+  background-color: transparent;
+  border-color: #25D366;
+  color: #25D366;
+  border-radius: 15px;
+  padding: 5px;
+  margin:auto;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.btn-whatsapp:hover{
+  color: white;
+  background-color: #25D366;
+  transition: 0.3s;
+} 
+.link{
+  text-decoration: none;
+}
+
+.content{
+  margin: 5%;
+ 
+}
+.solar-title-calc{
+  /* text-align: center; */
+text-transform:uppercase ;
+text-decoration: underline;
+}
+.tables{
+  width: 65%;
+}
+table {
+  border: 1px solid #b3adad;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table th {
+  border: 1px solid #b3adad;
+  padding: 5px;
+  background: #f0f0f0;
+  color: #313030;
+}
+
+table td {
+  border: 1px solid #b3adad;
+  text-align: center;
+  padding: 5px;
+  background: #ffffff;
+  color: #313030;
+}
+.center{
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+ 
+    
+      .wrapper{
+       width: 85%;
+       height: 85%;
+       
+      }
+    
+      .navbar{
+        display: flex;
+        justify-content:space-evenly;
+      align-items: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+      text-align: center;
+      }
+      .image-div{
+          width: 50%;
+        }
+        .heading-div .navbar-heading{
+        width: 100%;
+        font-size: 16px;
+      padding: 10px;
+      }
+      .logo{
+          height: 40px;
+        }
+        .lla-logo{
+          height: 30px;
+        }
+        
+      .calculator{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+    width: auto;
+    height: 80%;
+    text-align: center;
+    margin: 10px;
+      }
+    
+      .overall-result{
+        color: rgb(106, 177, 0);
+        font-size:28px;
+      }
+     
+      .solar-value{
+          font-size: 28px;
+          
+         
+      }
+      .btn-group{
+        display: flex;
+        flex-direction: column;
+      }
+      .btn-get-a-quote{
+        display: inline;
+          width:80%;
+          font-size: 16px;
+          background-color: #2b2a2a;
+          color: white;
+          border-radius: 15px;
+          padding: 5px;
+          margin:auto;
+      } 
+      .btn-whatsapp{
+        width: 80%;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    
+    .link{
+      display: inline;
+    }
+      datalist {
+        display: none;
+       
+      }
+      .tables{
+        width: 100%;
+      }
+      #btn-whatsapp{
+        
+        display: inline;
+        width:60%;
+        font-size: 18px;
+        background-color: transparent;
+        border-color: #25D366;
+        color: black;
+        border-radius: 15px;
+        padding: 5px;
+        margin:auto;
+        margin-top: 5px;
+      } 
+      .content{
+        font-size: 14px;
+      }
+      
+}
+@media screen and (max-width: 940px) {
+ 
+    
+    .wrapper{
+     width: 85%;
+     height: 85%;
+     
+    }
+}
